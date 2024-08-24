@@ -641,9 +641,9 @@ form textarea {
     padding: 10px 5%;
   }
 
-  #header{
+  #header {
     display: flex;
-  justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .logo {
     width: 100px;
@@ -751,7 +751,9 @@ form textarea {
     margin-bottom: 40px;
     text-align: center;
   }
-
+  .sub-title {
+    font-size: 50px;
+  }
   .contact-left p {
     margin-top: 10px;
     font-size: 12px;
