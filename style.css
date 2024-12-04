@@ -5,6 +5,9 @@
   font-size: 24px;
   cursor: pointer;
   color: white;
+  padding: 10px; /* Added padding */
+  border-radius: 5px; /* Optional for better UX */
+  background: #333; /* Optional for a visible clickable area */
 }
 
 ul#sidemenu {
