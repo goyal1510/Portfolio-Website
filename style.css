@@ -1,4 +1,55 @@
 /* Base styles */
+/* Responsive Header with Side Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+ul#sidemenu {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease;
+}
+
+ul#sidemenu.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  ul#sidemenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #262626;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    z-index: 999;
+  }
+
+  ul#sidemenu li {
+    margin: 15px 0;
+  }
+
+  ul#sidemenu li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+
+  ul#sidemenu.active {
+    transform: translateX(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
